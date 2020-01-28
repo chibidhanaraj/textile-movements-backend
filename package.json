@@ -1,0 +1,31 @@
+{
+  "name": "shipping-movements-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chibidhanaraj/shipping-movements.git"
+  },
+  "author": "Chibi Dhanaraj",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "camelcase-keys": "^6.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.7",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "pug": "^2.0.4",
+    "xls-to-json-lc": "^0.3.4",
+    "xlsx-to-json-lc": "^0.5.0"
+  }
+}
