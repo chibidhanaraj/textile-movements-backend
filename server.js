@@ -25,7 +25,7 @@ fs.mkdirsSync(UPLOAD_LOCATION);
 app.use(logger('dev'));
 
 //MongoDb Connection Establishment
-const uri = (process.env.MONGODB_URI || `mongodb+srv://chibi:chibi12345@shipping-info-07aap.mongodb.net/test?retryWrites=true&w=majority`)
+const uri = (process.env.MONGODB_URI || `mongodb://uibigesjssenidmi7huq:rfRunlSfgGGhP6J2HXZT@bgzixo7gsakwa8b-mongodb.services.clever-cloud.com:27017/bgzixo7gsakwa8b`)
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 const connection = mongoose.connection;
 connection.once('open', () => {
